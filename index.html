@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>String manipulator</title>
+</head>
+<body>
+    <div id="app">
+        <form class="form-inline">
+            <input v-model="word" class="form-control" type="text" name="">
+            <button v-on:click=Add() class="btn btn-light" type="button">Show it</button>
+        </form>
+        <ol style="width: 50%;">
+            <li>{{wordlist}}</li>
+            <li>{{Upper}}</li>
+            <li>{{Lower}}</li>
+        </ol>
+        <div style="width: 25%;">
+            <table class="table table-striped table-bordered">
+                <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            {{wordlist}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            {{Upper}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            {{Lower}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
